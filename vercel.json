@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/mjkit-frontend/",
+      "destination": "https://mjkit-frontend-kayiutommylis-projects.vercel.app/"
+    },
+    {
       "source": "/mjkit-frontend/:path*",
       "destination": "https://mjkit-frontend-kayiutommylis-projects.vercel.app/:path*"
     },
