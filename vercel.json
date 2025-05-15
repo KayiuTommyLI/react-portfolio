@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/mjkit-frontend/:path*",
+      "destination": "https://mjkit-frontend-kayiutommylis-projects.vercel.app/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.likayiu.me" }],
+      "destination": "https://likayiu.me/:path*",
+      "permanent": true
+    }
+  ]
+}
