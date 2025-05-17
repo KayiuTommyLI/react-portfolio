@@ -24,7 +24,7 @@ function Main() {
           <p>Specializing in scalable system design and Full Stack Development.</p>
 
           <div className="mobile_social_icons">
-            <a href="ttps://github.com/KayiuTommyLI" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+            <a href="https://github.com/KayiuTommyLI" target="_blank" rel="noreferrer"><GitHubIcon/></a>
             <a href="https://www.linkedin.com/in/li-ka-yiu-tommy/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAws } from '@fortawesome/free-brands-svg-icons'; // Added faJava, faAws
-import { faDatabase, faCode, faBrain, faServer, faVial } from '@fortawesome/free-solid-svg-icons'; // Added more solid icons
+import { faDatabase, faCode, faBrain, faVial, faGears } from '@fortawesome/free-solid-svg-icons'; // Added more solid icons
 import '../assets/styles/Expertise.scss';
 import { Chip } from '@mui/material';
 
@@ -45,8 +45,18 @@ const databaseTechSkills = [
 ];
 
 const devopsCloudSkills = [
-    "AWS (ECS, Fargate, Lambda, API Gateway)", 
-    "AWS (RDS, ALB, ECR, ACM, VPC, EC2, IAM, CloudWatch Logs)",
+    "AWS ECS",
+    "AWS Fargate",
+    "AWS Lambda",
+    "AWS API Gateway", 
+    "AWS RDS",
+    "AWS ALB", 
+    "AWS ECR", 
+    "AWS ACM", 
+    "AWS VPC", 
+    "AWS EC2",
+    "AWS IAM",
+    "AWS CloudWatch Logs",
     "Docker",
     "CI/CD",
     "Jenkins",
@@ -128,7 +138,7 @@ function Expertise() {
 
                 {/* Section 2: Backend & API Development */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faServer} size="3x"/> {/* Ensure faServer is imported */}
+                    <FontAwesomeIcon icon={faGears} size="3x"/> {/* Ensure faServer is imported */}
                     <h3>Backend & API Development</h3>
                     <p>Designing and implementing secure, scalable backend systems and RESTful APIs with a focus on performance.</p>
                     <div className="flex-chips">

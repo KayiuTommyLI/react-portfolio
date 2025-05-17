@@ -1,24 +1,19 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'; // This might not be needed if not using regular icons
+// import '@fortawesome/free-regular-svg-icons'; // Only if you use regular icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons'; // faGraduationCap for education
+import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss';
 
 function Timeline() {
-  // Define consistent styles for work and education icons
-  const workIconStyle = { background: '#5000ca', color: 'white' }; // Example: Purple background, white icon
-  const schoolIconStyle = { background: '#007bff', color: 'white' }; // Example: Blue background, white icon
-  // Content styles can also be predefined if you want consistency
-  // const contentStyle = { background: 'white', color: 'rgb(39, 40, 34)' };
-  // const contentArrowStyle = { borderRight: '7px solid white' };
-
+  const workIconStyle = { background: '#5000ca', color: 'white' }; // Keep template's purple for work
+  const schoolIconStyle = { background: '#007bff', color: 'white' }; // A distinct blue for education
 
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Experience & Education</h1> {/* Updated title */}
+        <h1>Experience & Education</h1>
         <VerticalTimeline>
 
           {/* Education: University of Calgary */}
@@ -31,7 +26,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Master of Engineering in Geomatics Engineering</h3>
             <h4 className="vertical-timeline-element-subtitle">University of Calgary, Calgary, AB</h4>
             <p>
-              GPA: 3.9/4.0. Key Skills: Machine Learning, Data Mining, GIS, Python (PyTorch, NumPy, Pandas, Scikit-learn), MATLAB, ArcGIS Pro.
+              Achieved a GPA of <strong><span className="timeline-metric">3.9/4.0</span></strong>. Focused on Machine Learning, Data Mining, GIS, and Python (PyTorch, NumPy, Pandas).
             </p>
           </VerticalTimelineElement>
 
@@ -45,7 +40,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Contract System Analyst</h3>
             <h4 className="vertical-timeline-element-subtitle">CL Technical Service Limited, Hong Kong</h4>
             <p>
-              Outsourced System Analyst for HKSAR Housing Authority. Monitored 6 systems, led system enhancements, ensured ISO 9001 compliance, stakeholder communication, and user support.
+              Served as an outsourced System Analyst for HKSAR Housing Authority, collaborating within an <strong><span className="timeline-metric">8-person team</span></strong> to monitor <strong><span className="timeline-metric">6 distinct systems</span></strong> including a worker check-in system. Led system enhancement projects, developed specification documents, and ensured ISO 9001 compliance.
             </p>
           </VerticalTimelineElement>
 
@@ -59,7 +54,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Project Manager</h3>
             <h4 className="vertical-timeline-element-subtitle">Octopus Cards Limited / Octopus Holdings Limited, Hong Kong</h4>
             <p>
-              Led a subgroup of 8 (2 direct reports) for front-end device projects. Engineered and deployed EOD system (Spring Boot, PostgreSQL, Docker). Managed full SDLC, championed TDD, and contributed to innovation competitions.
+              Led a front-end device projects subgroup of <strong><span className="timeline-metric">8 (managing 2 direct reports)</span></strong>. Engineered and deployed the EOD system (Spring Boot, PostgreSQL, Docker), replacing a manual process. Managed full SDLC for multiple projects and earned <strong><span className="timeline-metric">merit awards</span> </strong> in OCL's innovation competitions (2017, 2020).
             </p>
           </VerticalTimelineElement>
 
@@ -73,7 +68,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Assistant Project Manager</h3>
             <h4 className="vertical-timeline-element-subtitle">Octopus Cards Limited / Octopus Holdings Limited, Hong Kong</h4>
             <p>
-              Enhanced Fare Table System (FTS) for Public Transportation Scheme. Developed Octopus Secure Data Exchange (OSDX) with TLS 1.3. Enhanced New Retail Reader (NRR) for KMB Fare Saver.
+              Enhanced Fare Table System (FTS) supporting HK government's Public Transportation Scheme (covering <strong><span className="timeline-metric">99.9% of HK citizens</span></strong>). Developed Octopus Secure Data Exchange (OSDX) using TLS 1.3 for secure POS settlements with <strong><span className="timeline-metric">5,000+ merchants</span></strong>. Enhanced New Retail Reader (NRR) for KMB Fare Saver.
             </p>
           </VerticalTimelineElement>
 
@@ -87,7 +82,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Senior System Engineer (Front-End Device Team)</h3>
             <h4 className="vertical-timeline-element-subtitle">Octopus Cards Limited / Octopus Holdings Limited, Hong Kong</h4>
             <p>
-              Advanced card reader development (Java, C++, C). Modified DLLs for vendors. Developed Fare Table System (FTS) for MOPs (Spring, Struts2, MySQL). UI editing, automation testing, and stakeholder presentations.
+              Advanced card reader development (Java, C++, C). Developed Fare Table System (FTS) for Multipurpose Octopus Processors used by over <strong><span className="timeline-metric">4,000 vehicles</span></strong>, supporting HK government's <strong><span className="timeline-metric">$2 flat fare scheme</span></strong>. Modified DLLs and developed automation testing tools.
             </p>
           </VerticalTimelineElement>
 
@@ -101,7 +96,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Master of Science in Information Technology</h3>
             <h4 className="vertical-timeline-element-subtitle">The Hong Kong Polytechnic University, Hong Kong</h4>
             <p>
-              Key Areas: Database Systems, Data Mining, OOP, AI, Web Technologies. Skills: SQL, Java, C++.
+              Key Areas: Database Systems, Data Mining, Object-Oriented Programming, Artificial Intelligence, Web Technologies. Skills Gained: SQL, Java, C++.
             </p>
           </VerticalTimelineElement>
 
@@ -115,21 +110,21 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">System Engineer (Front-End Device Team)</h3>
             <h4 className="vertical-timeline-element-subtitle">Octopus Cards Limited / Octopus Holdings Limited, Hong Kong</h4>
             <p>
-              Focused on testing and maintaining front-end devices (Service Points, KMB readers, POP readers). Conducted SIT/UAT. Developed automation tools (C++, Java, Python) and provided debugging support.
+              Contributed to a system processing <strong><span className="timeline-metric">15 million daily transactions</span></strong>. Focused on testing and maintaining front-end devices (Octopus Service Points, KMB readers, POP readers). Developed automation tools (C++, Java, Python) to optimize testing efficiency.
             </p>
           </VerticalTimelineElement>
 
           {/* Work: ASMPT Semiconductor Solutions */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="Aug 2010 - Oct 2013" // Combining both roles here for brevity
+            date="Aug 2010 - Oct 2013"
             iconStyle={workIconStyle}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Electronic Engineer I / II</h3> {/* Combined title */}
+            <h3 className="vertical-timeline-element-title">Electronic Engineer I / II</h3>
             <h4 className="vertical-timeline-element-subtitle">ASMPT Semiconductor Solutions, Hong Kong</h4>
             <p>
-              Software maintenance and support for die-bonding machines (C++, OOP, MVC). Implemented features to enhance machine efficiency, conducted testing, and provided global field support and user training.
+              Maintained C++ software for die-bonding machines (valued at <strong><span className="timeline-metric">HKD 1M each</span></strong>, deployed to <strong><span className="timeline-metric">100+ factories globally</span></strong>). Improved performance across <strong><span className="timeline-metric">3-4 models</span></strong> as sole software engineer in a 6-person team. Provided global field support and user training.
             </p>
           </VerticalTimelineElement>
 
@@ -141,9 +136,9 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faGraduationCap} />}
           >
             <h3 className="vertical-timeline-element-title">Bachelor of Engineering in Electronic Engineering</h3>
-            <h4 className="vertical-timeline-element-subtitle">The Hong Kong University of Science and Technology (HKUST), Hong Kong</h4>
+            <h4 className="vertical-timeline-element-subtitle">The Hong Kong University of Science and Technology, Hong Kong</h4>
             <p>
-              Second Class Honors (Division 1). Skills: C++, C, Java, Assembly, MATLAB, Web Dev basics, Networking.
+              Second Class Honors (Division 1) <strong><span className="timeline-metric">Dean's List (Spring 2009-10)</span></strong>. Foundational skills in C++, C, Java, Assembly, MATLAB, and Web Development.
             </p>
           </VerticalTimelineElement>
 
@@ -157,7 +152,7 @@ function Timeline() {
             <h3 className="vertical-timeline-element-title">Engineering Trainee</h3>
             <h4 className="vertical-timeline-element-subtitle">Solomon Systech Limited, Hong Kong</h4>
             <p>
-              Developed GUI for IC floor planning (Tcl/Tk), web-based information system (JSP, MySQL), and schematic generator (Tcl/Tk, C++). Contributed to layout verification scripts and CMOS design.
+              In a 15-person team, developed a GUI for IC floor planning (Tcl/Tk) which received a <strong><span className="timeline-metric">monthly team award</span></strong>, a web-based info system (JSP, MySQL), and a schematic generator (Tcl/Tk, C++).
             </p>
           </VerticalTimelineElement>
 
