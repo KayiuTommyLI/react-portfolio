@@ -32,12 +32,12 @@ interface TimelineItem {
 // Configuration
 const iconConfig = {
   work: { 
-    icon: faBriefcase, 
-    style: { background: '#5000ca', color: 'white' } 
+    icon: faBriefcase,
+    style: { background: 'rgb(108, 117, 125)', color: 'white' } 
   },
   education: { 
     icon: faGraduationCap, 
-    style: { background: '#007bff', color: 'white' } 
+    style: { background: 'rgb(108, 117, 125)', color: 'white' } 
   }
 };
 
@@ -181,7 +181,7 @@ const timelineData: TimelineItem[] = [
     title: 'Electronic Engineer I',
     subtitle: 'ASMPT Technology Hong Kong Limited',
     location: 'Hong Kong',
-    description: 'Maintained multi-threaded C++ software for die-bonding machines deployed to <strong><span class="timeline-metric">100+ factories</span></strong>. Improved performance across <strong><span class="timeline-metric">3-4 models</span></strong>. Provided global field support. Promoted in Jan 2013.',
+    description: 'Maintained multi-threaded C++ software for die-bonding machines deployed to <strong><span class="timeline-metric">100+ factories</span></strong>. Improved performance across <strong><span class="timeline-metric">3-4 models</span></strong>. Provided global field support.',
     logo: asmptlogo,
     brandColor: '#005BAC'
   },
