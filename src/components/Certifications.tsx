@@ -44,9 +44,8 @@ function Certifications() {
   return (
     <div id="certifications" className="bg-wallpaper">
       <div className="projects-container">
-        <Typography variant="h4" component="h1" gutterBottom style={{ textAlign: 'center', marginBottom: '40px' }}>
-          Certifications
-        </Typography>
+        
+        <h1>Certifications</h1>
         <Grid container spacing={4} justifyContent="center">
           {certificationsData.map((cert) => (
             <Grid item key={cert.id} xs={12} sm={6} md={6}>
