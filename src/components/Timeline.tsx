@@ -91,7 +91,7 @@ const TimelineCard = ({ item }: { item: TimelineItem }) => {
 const Timeline = () => {
   return (
     <div id="history">
-      <div className="items-container">
+      <div className="items-container timeline-container">
         <h1>Experience & Education</h1>
         <VerticalTimeline>
           {timelineData.map((item, index) => (

@@ -45,6 +45,7 @@ const databaseTechSkills = [
 ];
 
 const devopsCloudSkills = [
+    "AWS Certified Cloud Practitioner",
     "AWS ECS",
     "AWS Fargate",
     "AWS Lambda",
