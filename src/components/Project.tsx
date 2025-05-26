@@ -47,6 +47,28 @@ function Project() {
         <h1>Selected Projects</h1> {/* Changed title */}
         <div className="projects-grid">
 
+            {/* Personal Project: Mahjong Score Calculation - Web */}
+            <div className="project">
+                <a href="https://likayiu.me/mjkit-frontend/" target="_blank" rel="noreferrer">
+                    <div className="project-image-container">
+                        <img src={mjWebAppImg} className="zoom" alt="Mahjong Score Calculation Web App" />
+                    </div>
+                </a>
+                <a href="https://likayiu.me/mjkit-frontend/" target="_blank" rel="noreferrer">
+                    <h2>Mahjong Score Calculation - Web</h2>
+                </a>
+                <p>
+                    <strong>Personal Project (2025):</strong> Full-stack web application to automate Mahjong scorekeeping. <br />
+                    <strong>Features:</strong> Dynamic scoring engine, configurable rules, JWT-based multi-token auth, real-time score preview.
+                </p>
+                <div className="flex-chips">
+                    <span className="chip-title">Key Tech:</span>
+                    {mjWebTechStack.map((tech, index) => (
+                        <Chip key={index} className='chip' label={tech} />
+                    ))}
+                </div>
+            </div>
+            
             {/* Personal Project: Hong Kong Taxi Meter */}
             <div className="project">
                 <a href="https://likayiu.me/hktaximeter/" target="_blank" rel="noreferrer">
@@ -71,27 +93,6 @@ function Project() {
                 </div>
             </div>
 
-            {/* Personal Project: Mahjong Score Calculation - Web */}
-            <div className="project">
-                <a href="https://likayiu.me/mjkit-frontend/" target="_blank" rel="noreferrer">
-                    <div className="project-image-container">
-                        <img src={mjWebAppImg} className="zoom" alt="Mahjong Score Calculation Web App" />
-                    </div>
-                </a>
-                <a href="https://likayiu.me/mjkit-frontend/" target="_blank" rel="noreferrer">
-                    <h2>Mahjong Score Calculation - Web</h2>
-                </a>
-                <p>
-                    <strong>Personal Project (2025):</strong> Full-stack web application to automate Mahjong scorekeeping. <br />
-                    <strong>Features:</strong> Dynamic scoring engine, configurable rules, JWT-based multi-token auth, real-time score preview.
-                </p>
-                <div className="flex-chips">
-                    <span className="chip-title">Key Tech:</span>
-                    {mjWebTechStack.map((tech, index) => (
-                        <Chip key={index} className='chip' label={tech} />
-                    ))}
-                </div>
-            </div>
 
             {/* Course Project: Multimodal Garbage Classification System */}
             <div className="project">
