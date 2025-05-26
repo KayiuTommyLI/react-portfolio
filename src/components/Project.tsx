@@ -5,6 +5,7 @@ import mjAndroidAppImg from '../assets/images/mj-android-app.png';
 import garbageClassifierImg from '../assets/images/garbage-classifier.png';
 import deforestationStudyImg from '../assets/images/deforestation-study.png'; 
 import calgaryTrafficAnalysisImg from '../assets/images/calgary-traffic-analysis.png';
+import hkTaximeterImg from '../assets/images/hk-taximeter.png'; // Add this new import
 import { Chip } from '@mui/material'; // Import Chip component
 
 import '../assets/styles/Project.scss';
@@ -34,11 +35,41 @@ const calgaryTrafficTechStack = [
     "Pandas", "NumPy", "Matplotlib"
 ];
 
+// Add tech stack for HK Taximeter
+const hkTaximeterTechStack = [
+    "React", "Tailwind CSS", "Vite", "Geolocation API", 
+    "Haversine Formula", "JavaScript", "CSS3", "HTML5"
+];
+
 function Project() {
     return(
     <div className="projects-container" id="projects">
         <h1>Selected Projects</h1> {/* Changed title */}
         <div className="projects-grid">
+
+            {/* Personal Project: Hong Kong Taxi Meter */}
+            <div className="project">
+                <a href="https://likayiu.me/hktaximeter/" target="_blank" rel="noreferrer">
+                    <div className="project-image-container">
+                        <img src={hkTaximeterImg} className="zoom" alt="Hong Kong Taxi Meter Application" />
+                    </div>
+                </a>
+                <a href="https://likayiu.me/hktaximeter/" target="_blank" rel="noreferrer">
+                    <h2>Hong Kong Taxi Meter</h2>
+                </a>
+                <p>
+                    <strong>Personal Project (2025):</strong> A modern, web-based taxi meter application that simulates the official Hong Kong taxi fare calculation system. <br />
+                    <strong>Features:</strong> GPS tracking for accurate distance measurement, 
+                    realistic digital display using 7-segment font, precise fare calculation based on latest rates, 
+                    and extras calculation for toll fees and surcharges.
+                </p>
+                <div className="flex-chips">
+                    <span className="chip-title">Key Tech:</span>
+                    {hkTaximeterTechStack.map((tech, index) => (
+                        <Chip key={index} className='chip' label={tech} />
+                    ))}
+                </div>
+            </div>
 
             {/* Personal Project: Mahjong Score Calculation - Web */}
             <div className="project">
