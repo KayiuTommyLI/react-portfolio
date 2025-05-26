@@ -82,7 +82,7 @@ function Project() {
                     <h2>Mahjong Score Calculation - Web</h2>
                 </a>
                 <p>
-                    <strong>Personal Project:</strong> Full-stack web application to automate Mahjong scorekeeping. <br />
+                    <strong>Personal Project (2025):</strong> Full-stack web application to automate Mahjong scorekeeping. <br />
                     <strong>Features:</strong> Dynamic scoring engine, configurable rules, JWT-based multi-token auth, real-time score preview.
                 </p>
                 <div className="flex-chips">
