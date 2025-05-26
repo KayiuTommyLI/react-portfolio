@@ -9,6 +9,14 @@
       "destination": "https://mjkit-frontend-kayiutommylis-projects.vercel.app/:path*"
     },
     {
+      "source": "/hktaximeter/",
+      "destination": "https://hktaximeter-kayiutommylis-projects.vercel.app/"
+    },
+    {
+      "source": "/hktaximeter/:path*",
+      "destination": "https://hktaximeter-kayiutommylis-projects.vercel.app/:path*"
+    },
+    {
       "source": "/:path*",
       "destination": "/"
     }
