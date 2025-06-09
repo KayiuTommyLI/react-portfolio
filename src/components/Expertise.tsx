@@ -33,7 +33,10 @@ const backendApiSkills = [
     "Struts2",
     "Apache Tomcat",
     "Multithreading",
-    "Object-Oriented Programming (OOP)" // Foundational concept
+    "Object-Oriented Programming (OOP)", // Foundational concept,
+    "PyMuPDF",
+    "JSON Processing",
+    "File Upload APIs"
 ];
 
 const databaseTechSkills = [
@@ -78,6 +81,9 @@ const mlDataScienceSkills = [
     "MATLAB", // Also listed under Languages, emphasized here for ML/DS
     "NLTK",
     "Transformers Library (Hugging Face)",
+    "Google Gemini AI",
+    "Natural Language Processing", 
+    "Prompt Engineering",
     "Data Mining",
     "Data Analysis",
     "Model Evaluation",
@@ -112,7 +118,10 @@ const softwareQaAndPracticesSkills = [
     "Networking",                           // From Other Concepts
     "Digital Image Processing",             // From Other Concepts
     "Signal Processing",                    // From Other Concepts
-    "Tcl/Tk"                                // From Languages, might fit here if used for tooling/scripting in QA
+    "Tcl/Tk",                                // From Languages, might fit here if used for tooling/scripting in QA
+    "ATS Optimization", 
+    "Content Validation", 
+    "Error Handling & Recovery" 
 ];
 
 

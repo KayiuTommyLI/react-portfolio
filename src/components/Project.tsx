@@ -5,8 +5,9 @@ import mjAndroidAppImg from '../assets/images/mj-android-app.png';
 import garbageClassifierImg from '../assets/images/garbage-classifier.png';
 import deforestationStudyImg from '../assets/images/deforestation-study.png'; 
 import calgaryTrafficAnalysisImg from '../assets/images/calgary-traffic-analysis.png';
-import hkTaximeterImg from '../assets/images/hk-taximeter.png'; // Add this new import
-import { Chip } from '@mui/material'; // Import Chip component
+import hkTaximeterImg from '../assets/images/hk-taximeter.png';
+import aiResumeAppImg from '../assets/images/ai-resume-app.png';
+import { Chip } from '@mui/material';
 
 import '../assets/styles/Project.scss';
 
@@ -35,16 +36,21 @@ const calgaryTrafficTechStack = [
     "Pandas", "NumPy", "Matplotlib"
 ];
 
-// Add tech stack for HK Taximeter
 const hkTaximeterTechStack = [
     "React", "Tailwind CSS", "Vite", "Geolocation API", 
     "Haversine Formula", "JavaScript", "CSS3", "HTML5"
 ];
 
+// Add tech stack for AI Resume Generator
+const aiResumeAppTechStack = [
+    "FastAPI", "Python", "Google Gemini AI", "PyMuPDF", 
+    "JavaScript", "HTML5", "CSS3", "RESTful APIs", "JSON"
+];
+
 function Project() {
     return(
     <div className="projects-container" id="projects">
-        <h1>Selected Projects</h1> {/* Changed title */}
+        <h1>Selected Projects</h1>
         <div className="projects-grid">
 
             {/* Personal Project: Mahjong Score Calculation - Web */}
@@ -69,6 +75,29 @@ function Project() {
                 </div>
             </div>
             
+            {/* Personal Project: AI Resume & Cover Letter Generator */}
+            <div className="project">
+                <a href="https://github.com/KayiuTommyLI/ai-resume-generator" target="_blank" rel="noreferrer">
+                    <div className="project-image-container">
+                        <img src={aiResumeAppImg} className="zoom" alt="AI Resume & Cover Letter Generator" />
+                    </div>
+                </a>
+                <a href="https://github.com/KayiuTommyLI/ai-resume-generator" target="_blank" rel="noreferrer">
+                    <h2>AI Resume & Cover Letter Generator</h2>
+                </a>
+                <p>
+                    <strong>Personal Project (2025):</strong> Comprehensive AI-powered web application automating job application materials generation. <br />
+                    <strong>Features:</strong> Google Gemini AI integration, intelligent job description analysis, 
+                    ATS-optimized resume tailoring, STAR methodology integration, and dynamic cover letter generation.
+                </p>
+                <div className="flex-chips">
+                    <span className="chip-title">Key Tech:</span>
+                    {aiResumeAppTechStack.map((tech, index) => (
+                        <Chip key={index} className='chip' label={tech} />
+                    ))}
+                </div>
+            </div>
+
             {/* Personal Project: Hong Kong Taxi Meter */}
             <div className="project">
                 <a href="https://likayiu.me/hktaximeter/" target="_blank" rel="noreferrer">

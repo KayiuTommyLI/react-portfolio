@@ -20,7 +20,7 @@ function Main() {
             </div>
             <h1>Tommy Li</h1>
             <p>Experienced Software Engineer, System Analyst and Project Manager</p>
-            <p>Specializing in scalable system design and Full Stack Development</p>
+            <p>Specializing in scalable system design, Full Stack Development, and AI Integration</p>
 
             <div className="mobile_social_icons">
               <a href="https://github.com/KayiuTommyLI" target="_blank" rel="noreferrer"><GitHubIcon/></a>
