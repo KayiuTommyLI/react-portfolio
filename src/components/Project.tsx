@@ -77,12 +77,12 @@ function Project() {
             
             {/* Personal Project: AI Resume & Cover Letter Generator */}
             <div className="project">
-                <a href="https://github.com/KayiuTommyLI/ai-resume-generator" target="_blank" rel="noreferrer">
+                <a href="https://github.com/KayiuTommyLI/resume-app" target="_blank" rel="noreferrer">
                     <div className="project-image-container">
                         <img src={aiResumeAppImg} className="zoom" alt="AI Resume & Cover Letter Generator" />
                     </div>
                 </a>
-                <a href="https://github.com/KayiuTommyLI/ai-resume-generator" target="_blank" rel="noreferrer">
+                <a href="https://github.com/KayiuTommyLI/resume-app" target="_blank" rel="noreferrer">
                     <h2>AI Resume & Cover Letter Generator</h2>
                 </a>
                 <p>
