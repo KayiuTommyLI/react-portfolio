@@ -34,7 +34,7 @@ const certificationsData: CertificationInfo[] = [
     badgeImage: psmBadge,
     title: 'Professional Scrum Master™ I (PSM I)',
     issuer: 'Scrum.org',
-    issueDate: 'May 2025',
+    issueDate: 'May 10, 2025',
     credlyLink: 'https://www.credly.com/badges/6f58f7df-fb7b-475f-80ff-1ce3de20eee5/linked_in_profile',
   },
 ];
