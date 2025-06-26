@@ -17,7 +17,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 
 const drawerWidth = 240;
-// const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Contact', 'contact']];
 const navItems = [['Expertise', 'expertise'], ['History', 'history'], ['Projects', 'projects'], ['Certifications', 'certifications']];
 
 function Navigation({parentToChild, modeChange}: any) {
@@ -52,21 +51,55 @@ function Navigation({parentToChild, modeChange}: any) {
     const expertiseElement = document.getElementById(section);
     if (expertiseElement) {
       expertiseElement.scrollIntoView({ behavior: 'smooth' });
-      console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
+      console.log('Scrolling to:', expertiseElement);
     } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+      console.error('Element with id "expertise" not found');
     }
   };
 
   const drawer = (
-    <Box className="navigation-bar-responsive" onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <p className="mobile-menu-top"><ListIcon/>Menu</p>
-      <Divider />
+    <Box 
+      className="navigation-bar-responsive" 
+      onClick={handleDrawerToggle} 
+      sx={{ 
+        textAlign: 'center',
+        backgroundColor: mode === 'dark' ? '#1a1a1a' : '#ffffff',
+        color: mode === 'dark' ? '#ffffff' : '#000000',
+        height: '100%'
+      }}
+    >
+      <p 
+        className="mobile-menu-top" 
+        style={{ 
+          color: mode === 'dark' ? '#ffffff' : '#000000',
+          margin: '16px 0'
+        }}
+      >
+        <ListIcon style={{ color: mode === 'dark' ? '#ffffff' : '#000000' }}/>
+        Menu
+      </p>
+      <Divider sx={{ backgroundColor: mode === 'dark' ? '#404040' : '#e0e0e0' }} />
       <List>
         {navItems.map((item) => (
           <ListItem key={item[0]} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => scrollToSection(item[1])}>
-              <ListItemText primary={item[0]} />
+            <ListItemButton 
+              sx={{ 
+                textAlign: 'center',
+                '&:hover': {
+                  backgroundColor: mode === 'dark' ? '#2a2a2a' : '#f5f5f5'
+                }
+              }} 
+              onClick={() => scrollToSection(item[1])}
+            >
+              <ListItemText 
+                primary={item[0]} 
+                sx={{ 
+                  color: mode === 'dark' ? '#ffffff' : '#000000',
+                  '& .MuiTypography-root': {
+                    color: mode === 'dark' ? '#ffffff' : '#000000'
+                  }
+                }}
+              />
             </ListItemButton>
           </ListItem>
         ))}
@@ -108,11 +141,15 @@ function Navigation({parentToChild, modeChange}: any) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { 
+              boxSizing: 'border-box', 
+              width: drawerWidth,
+              backgroundColor: mode === 'dark' ? '#1a1a1a' : '#ffffff'
+            },
           }}
         >
           {drawer}
