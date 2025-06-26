@@ -112,12 +112,12 @@ function Project() {
                     </div>
                 </a>
                 <a href="https://github.com/KayiuTommyLI/resume-app" target="_blank" rel="noreferrer">
-                    <h2>AI Resume & Cover Letter Generator</h2>
+                    <h2>AI Resume & Cover Letter Customization Assistant</h2>
                 </a>
                 <p>
-                    <strong>Personal Project (2025):</strong> Comprehensive AI-powered web application automating job application materials generation. <br />
+                    <strong>Personal Project (2025):</strong> Comprehensive AI-powered web application automating job application materials customization. <br />
                     <strong>Features:</strong> Google Gemini AI integration, intelligent job description analysis, 
-                    ATS-optimized resume tailoring, STAR methodology integration, and dynamic cover letter generation.
+                    ATS-optimized resume tailoring, STAR methodology integration, and dynamic cover letter customization.
                 </p>
                 <div className="flex-chips">
                     <span className="chip-title">Key Tech:</span>
