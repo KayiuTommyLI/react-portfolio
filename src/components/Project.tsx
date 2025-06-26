@@ -7,6 +7,7 @@ import deforestationStudyImg from '../assets/images/deforestation-study.png';
 import calgaryTrafficAnalysisImg from '../assets/images/calgary-traffic-analysis.png';
 import hkTaximeterImg from '../assets/images/hk-taximeter.png';
 import aiResumeAppImg from '../assets/images/ai-resume-app.png';
+import quizAppImg from '../assets/images/quiz-app.png';
 import { Chip } from '@mui/material';
 
 import '../assets/styles/Project.scss';
@@ -41,10 +42,15 @@ const hkTaximeterTechStack = [
     "Haversine Formula", "JavaScript", "CSS3", "HTML5"
 ];
 
-// Add tech stack for AI Resume Generator
 const aiResumeAppTechStack = [
     "FastAPI", "Python", "Google Gemini AI", "PyMuPDF", 
     "JavaScript", "HTML5", "CSS3", "RESTful APIs", "JSON"
+];
+
+const quizAppTechStack = [
+    "React", "Express.js", "Node.js", "Google Gemini AI", 
+    "JavaScript", "Tailwind CSS", "PDF-Parse", "SHA-256", 
+    "RESTful APIs", "JSON", "Vite"
 ];
 
 function Project() {
@@ -74,7 +80,30 @@ function Project() {
                     ))}
                 </div>
             </div>
-            
+            {/* Personal Project: AI-Powered Quiz Generator */}
+            <div className="project">
+                <a href="https://github.com/KayiuTommyLI/quiz-app" target="_blank" rel="noreferrer">
+                    <div className="project-image-container">
+                        <img src={quizAppImg} className="zoom" alt="AI-Powered Quiz Generator" />
+                    </div>
+                </a>
+                <a href="https://github.com/KayiuTommyLI/quiz-app" target="_blank" rel="noreferrer">
+                    <h2>AI-Powered Quiz Generator</h2>
+                </a>
+                <p>
+                    <strong>Personal Project (2025):</strong> Intelligent study application that automatically generates multiple-choice questions from study materials using Google Gemini AI. Built to enhance system design interview preparation through interactive learning. <br />
+                    <strong>Features:</strong> Multi-topic organization, smart question weighting based on performance, 
+                    duplicate prevention with SHA-256 hashing, adaptive learning algorithm, rate limiting protection, 
+                    and topic-specific question banking with incremental growth.
+                </p>
+                <div className="flex-chips">
+                    <span className="chip-title">Key Tech:</span>
+                    {quizAppTechStack.map((tech, index) => (
+                        <Chip key={index} className='chip' label={tech} />
+                    ))}
+                </div>
+            </div>
+
             {/* Personal Project: AI Resume & Cover Letter Generator */}
             <div className="project">
                 <a href="https://github.com/KayiuTommyLI/resume-app" target="_blank" rel="noreferrer">
