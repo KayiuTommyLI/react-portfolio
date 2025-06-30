@@ -48,9 +48,9 @@ const aiResumeAppTechStack = [
 ];
 
 const quizAppTechStack = [
-    "React", "Express.js", "Node.js", "Google Gemini AI", 
-    "JavaScript", "Tailwind CSS", "PDF-Parse", "SHA-256", 
-    "RESTful APIs", "JSON", "Vite"
+    "React", "Express.js", "Node.js", "Docker", "Docker Compose", "Google Gemini AI", 
+    "JavaScript", "Tailwind CSS", "PDF-Parse", "SHA-256 Hashing", 
+    "RESTful APIs", "JSON", "Vite", "CI/CD"
 ];
 
 function Project() {
@@ -91,10 +91,9 @@ function Project() {
                     <h2>AI-Powered Quiz Generator</h2>
                 </a>
                 <p>
-                    <strong>Personal Project (2025):</strong> Intelligent study application that automatically generates multiple-choice questions from study materials using Google Gemini AI. Built to enhance system design interview preparation through interactive learning. <br />
-                    <strong>Features:</strong> Multi-topic organization, smart question weighting based on performance, 
-                    duplicate prevention with SHA-256 hashing, adaptive learning algorithm, rate limiting protection, 
-                    and topic-specific question banking with incremental growth.
+                    <strong>Personal Project (2025):</strong> A full-stack, containerized study application that automatically generates multiple-choice questions from study materials using Google Gemini AI. Built to enhance system design interview preparation through interactive learning. <br />
+                    <strong>Features:</strong> Multi-topic organization, smart question weighting based on performance, duplicate prevention with SHA-256 hashing, and an adaptive learning algorithm. <br />
+                    <strong>Deployment & DevOps:</strong> Architected for one-command deployment using Docker Compose, featuring a multi-stage Dockerfile for an optimized, lightweight production image and a non-root user for enhanced security.
                 </p>
                 <div className="flex-chips">
                     <span className="chip-title">Key Tech:</span>

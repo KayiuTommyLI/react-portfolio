@@ -23,7 +23,7 @@ const fullStackWebDevSkills = [
 const backendApiSkills = [
     "Java",
     "Spring Boot",
-    "Python", // Also in ML, but relevant here for backend
+    "Python",           // Also in ML, but relevant here for backend
     "NestJS (v10/v11)", // Repeated for backend emphasis
     "Node.js",          // Repeated for backend emphasis
     "C++",              // Can be used for high-performance backend components
@@ -62,11 +62,17 @@ const devopsCloudSkills = [
     "AWS IAM",
     "AWS CloudWatch Logs",
     "Docker",
+    "Docker Compose", 
+    "Multi-Stage Docker Builds", 
+    "Container Image Optimization", 
+    "Container Security Practices (Non-Root Users)", 
+    "Container Health Checks", 
     "CI/CD",
     "Jenkins",
     "GitHub Actions",
     "GitHub Pages",
     "Linux/Windows Server Administration",
+    "Alpine Linux", 
     "Bash",
     "Windows Batch",
     "Namecheap (DNS)"
@@ -100,6 +106,9 @@ const softwareQaAndPracticesSkills = [
     "Automation Testing (SOAP UI)",
     "TDD Software Engineering Principles",
     "Software Testing / QA",
+    "Reproducible Builds (npm ci)", 
+    "Dependency Management",
+    "Configuration Management", 
     "SIT",
     "UAT",
     "Jest",
