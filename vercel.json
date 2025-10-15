@@ -17,6 +17,14 @@
       "destination": "https://hktaximeter-kayiutommylis-projects.vercel.app/:path*"
     },
     {
+      "source": "/mahjong-combinations-react/",
+      "destination": "https://mahjong-combinations-react-kayiutommylis-projects.vercel.app/"
+    },
+    {
+      "source": "/mahjong-combinations-react/:path*",
+      "destination": "https://mahjong-combinations-react-kayiutommylis-projects.vercel.app/:path*"
+    },
+    {
       "source": "/:path*",
       "destination": "/"
     }
