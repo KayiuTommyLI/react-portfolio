@@ -26,7 +26,7 @@ const certificationsData: CertificationInfo[] = [
     issuer: 'Amazon Web Services',
     issueDate: 'May 21, 2025',
     expiryDate: 'May 21, 2028',
-    credlyLink: 'https://www.credly.com/badges/c473f852-4f09-4292-89c4-cd7ad00bd7a1/linked_in_profile',
+    credlyLink: 'https://www.credly.com/badges/6f58f7df-fb7b-475f-80ff-1ce3de20eee5/linked_in_profile',
     validationNumber: '9dfd417a4fb848ca85397c3353eeb575',
   },
   {
@@ -35,7 +35,7 @@ const certificationsData: CertificationInfo[] = [
     title: 'Professional Scrum Master™ I (PSM I)',
     issuer: 'Scrum.org',
     issueDate: 'May 10, 2025',
-    credlyLink: 'https://www.credly.com/badges/6f58f7df-fb7b-475f-80ff-1ce3de20eee5/linked_in_profile',
+    credlyLink: 'https://www.credly.com/badges/c473f852-4f09-4292-89c4-cd7ad00bd7a1/linked_in_profile',
   },
 ];
 
